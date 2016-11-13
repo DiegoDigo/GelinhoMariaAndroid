@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:src="@mipmap/ic_launcher"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTipo"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_alignBottom="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:layout_toEndOf="@+id/img"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtQtd"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_alignBaseline="@+id/txtTipo"
+        android:layout_alignBottom="@+id/txtTipo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSabor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/img"
+        android:layout_alignLeft="@+id/txtTipo"
+        android:layout_alignStart="@+id/txtTipo"
+        />
+
+</RelativeLayout>

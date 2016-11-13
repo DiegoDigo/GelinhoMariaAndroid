@@ -10,7 +10,7 @@ public class SaboresGelinho {
 
     private Long id;
     private String sabor;
-    private TiposGelinhos tipo_gelinho;
+    private String tipo_gelinho;
     private Integer qtd;
     private BigDecimal valor_uni;
     private BigDecimal valor_total;
@@ -31,11 +31,11 @@ public class SaboresGelinho {
         this.sabor = sabor;
     }
 
-    public TiposGelinhos getTipo_gelinho() {
+    public String getTipo_gelinho() {
         return tipo_gelinho;
     }
 
-    public void setTipo_gelinho(TiposGelinhos tipo_gelinho) {
+    public void setTipo_gelinho(String tipo_gelinho) {
         this.tipo_gelinho = tipo_gelinho;
     }
 
