@@ -15,4 +15,7 @@ public interface EndPoints {
 
     @GET("v1/sabores")
     public Call<List<SaboresGelinho>> getSabores();
+
+    @GET("v1/sabor/{id}")
+    public Call<SaboresGelinho> getSabor();
 }

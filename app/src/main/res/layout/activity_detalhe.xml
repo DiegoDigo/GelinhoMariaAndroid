@@ -10,11 +10,4 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.diego.gelinhomaria.Detalhe">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtTest"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="50dp"/>
 </RelativeLayout>
