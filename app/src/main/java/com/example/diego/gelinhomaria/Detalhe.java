@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 public class Detalhe extends AppCompatActivity {
 
+    private  TextView txt ;
     private Intent intent;
 
     @Override
@@ -16,6 +17,10 @@ public class Detalhe extends AppCompatActivity {
 
         intent = getIntent();
         Long id = intent.getLongExtra("id",0);
+
+        txt = (TextView) findViewById(R.id.teste);
+        txt.setText(id.toString());
+
 
 
 

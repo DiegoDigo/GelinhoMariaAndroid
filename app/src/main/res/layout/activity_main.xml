@@ -17,6 +17,7 @@
         android:id="@+id/txtMsg"
         android:textAlignment="center"
         android:textSize="22dp"
+        android:textColor="@color/TitleSabor"
         android:textStyle="bold"
         />
     <ListView
