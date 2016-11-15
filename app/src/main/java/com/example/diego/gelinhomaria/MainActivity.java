@@ -1,5 +1,6 @@
 package com.example.diego.gelinhomaria;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     ListView listaSabores ;
     private static  String url = "http://192.168.0.116:8000/";
     private Intent intent;
+    ProgressDialog dialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
