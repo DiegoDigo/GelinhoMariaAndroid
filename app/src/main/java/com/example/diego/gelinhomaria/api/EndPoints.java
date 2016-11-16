@@ -6,6 +6,7 @@ import java.util.List;
 
 import retrofit.Call;
 import retrofit.http.GET;
+import retrofit.http.Headers;
 import retrofit.http.Path;
 
 /**
@@ -14,9 +15,11 @@ import retrofit.http.Path;
 
 public interface EndPoints {
 
+    @Headers({"Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed"})
     @GET("v1/sabores")
     public Call<List<SaboresGelinho>> getSabores();
 
+    @Headers({"Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed"})
     @GET("v1/sabor/{id}")
     public Call<SaboresGelinho> getSabor(@Path("id") Long id);
 }
