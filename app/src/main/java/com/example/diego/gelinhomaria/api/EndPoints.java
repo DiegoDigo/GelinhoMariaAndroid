@@ -15,11 +15,11 @@ import retrofit.http.Path;
 
 public interface EndPoints {
 
-    @Headers({"Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed"})
+    @Headers("Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed")
     @GET("v1/sabores")
     public Call<List<SaboresGelinho>> getSabores();
 
-    @Headers({"Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed"})
+    @Headers("Authorization: Token 4a388a5bb3a1f8d0677233d2758433c693e37eed")
     @GET("v1/sabor/{id}")
     public Call<SaboresGelinho> getSabor(@Path("id") Long id);
 }
