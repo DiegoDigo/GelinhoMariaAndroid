@@ -38,7 +38,7 @@ public class SaboresAdapter extends ArrayAdapter<SaboresGelinho>{
         qtd = (TextView) item.findViewById(R.id.txtQtd);
 
         sabor.setText(sabores.get(position).getSabor());
-        tipo.setText(sabores.get(position).getTipo_gelinho());
+        tipo.setText(sabores.get(position).getTipo_gelinho().getTipo());
         qtd.setText(sabores.get(position).getQtd().toString());
 
         return item;

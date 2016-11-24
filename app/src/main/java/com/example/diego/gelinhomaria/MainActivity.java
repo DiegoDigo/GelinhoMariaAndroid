@@ -30,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
     ListView listaSabores ;
     private static  String url = "http://192.168.0.116:8000/";
     private Intent intent;
-    ProgressDialog dialog;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        msg = (TextView) findViewById(R.id.txtMsg);
+         msg = (TextView) findViewById(R.id.txtMsg);
         listaSabores = (ListView) findViewById(R.id.listaSabores);
 
         Retrofit retrofit = new Retrofit.Builder()
@@ -55,11 +55,13 @@ public class MainActivity extends AppCompatActivity {
                 final SaboresAdapter adapter = new SaboresAdapter(getBaseContext(), response.body());
                 listaSabores.setAdapter(adapter);
                 listaSabores.setOnItemClickListener(chamarDetalhes());
+
             }
 
             @Override
             public void onFailure(Throwable t) {
                 msg.setText(t.getMessage());
+
             }
         });
 

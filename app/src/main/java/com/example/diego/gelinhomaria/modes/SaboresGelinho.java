@@ -1,16 +1,19 @@
 package com.example.diego.gelinhomaria.modes;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 /**
  * Created by diego on 12/11/16.
  */
 
-public class SaboresGelinho {
+public class SaboresGelinho implements Serializable{
+
+    private static final long serialVersionUID = 1L;
 
     private Long id;
     private String sabor;
-    private String tipo_gelinho;
+    private TiposGelinhos tipo_gelinho;
     private Integer qtd;
     private BigDecimal valor_uni;
     private BigDecimal valor_total;
@@ -29,14 +32,6 @@ public class SaboresGelinho {
 
     public void setSabor(String sabor) {
         this.sabor = sabor;
-    }
-
-    public String getTipo_gelinho() {
-        return tipo_gelinho;
-    }
-
-    public void setTipo_gelinho(String tipo_gelinho) {
-        this.tipo_gelinho = tipo_gelinho;
     }
 
     public Integer getQtd() {
@@ -61,5 +56,12 @@ public class SaboresGelinho {
 
     public void setValor_total(BigDecimal valor_total) {
         this.valor_total = valor_total;
+    }
+
+    public TiposGelinhos getTipo_gelinho() {
+        return tipo_gelinho;
+    }
+    public void setTipo_gelinho(TiposGelinhos tipo_gelinho) {
+        this.tipo_gelinho = tipo_gelinho;
     }
 }

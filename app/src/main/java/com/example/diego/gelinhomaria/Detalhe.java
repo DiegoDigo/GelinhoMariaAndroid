@@ -24,6 +24,7 @@ public class Detalhe extends AppCompatActivity {
     private Intent intent;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,12 +54,12 @@ public class Detalhe extends AppCompatActivity {
             public void onResponse(Response<SaboresGelinho> response, Retrofit retrofit) {
                 preencherDados(response.body());
 
-
             }
 
             @Override
             public void onFailure(Throwable t) {
                     txtSabor.setText(t.getMessage());
+
             }
         });
 
@@ -67,7 +68,7 @@ public class Detalhe extends AppCompatActivity {
 
     public void preencherDados(SaboresGelinho sabor){
             txtSabor.setText(sabor.getSabor());
-            txtTipo.setText(sabor.getTipo_gelinho());
+            txtTipo.setText(sabor.getTipo_gelinho().getTipo());
             txtQtd.setText(sabor.getQtd().toString());
             txtPreco.setText("R$ " + sabor.getValor_uni().toString());
 
