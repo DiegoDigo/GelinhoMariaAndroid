@@ -13,10 +13,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SABORES"
+        android:text="@string/tituloMain"
         android:id="@+id/txtMsg"
         android:textAlignment="center"
-        android:textSize="22dp"
+        android:textSize="22sp"
         android:textColor="@color/TitleSabor"
         android:textStyle="bold"
         />
